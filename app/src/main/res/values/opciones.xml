@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="combo_categorias">
+        <item>Resistencias</item>
+        <item>Capacitores</item>
+        <item>Potenciometros</item>
+        <item>Diodos</item>
+        <item>LEDS</item>
+        <item>Transistores</item>
+        <item>C. Integrados</item>
+        <item>Cables</item>
+        <item>Otros</item>
+    </string-array>
+
+</resources>
