@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="combo_categorias">
+        <item>Seleccione Categoria…</item>
         <item>Resistencias</item>
         <item>Capacitores</item>
         <item>Potenciometros</item>

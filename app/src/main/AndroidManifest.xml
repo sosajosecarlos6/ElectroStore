@@ -16,8 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Registro" />
-        <activity android:name=".Componentes"></activity>
+        <activity android:name=".Componentes" />
+        <activity android:name=".Editar"></activity>
     </application>
 
 </manifest>

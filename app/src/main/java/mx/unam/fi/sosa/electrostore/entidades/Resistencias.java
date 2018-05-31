@@ -1,28 +1,30 @@
 package mx.unam.fi.sosa.electrostore.entidades;
 
-public class Resistencias {
+import java.io.Serializable;
 
-    private int valor;
-    private int cantidad;
+public class Resistencias implements Serializable{
 
-    public Resistencias(int valor, int cantidad) {
+    private String valor;
+    private String cantidad;
+
+    public Resistencias() {
         this.valor = valor;
         this.cantidad = cantidad;
     }
 
-    public int getValor() {
+    public String getValor() {
         return valor;
     }
 
-    public void setValor(int valor) {
+    public void setValor(String valor) {
         this.valor = valor;
     }
 
-    public int getCantidad() {
+    public String getCantidad() {
         return cantidad;
     }
 
-    public void setCantidad(int cantidad) {
+    public void setCantidad(String cantidad) {
         this.cantidad = cantidad;
     }
 }

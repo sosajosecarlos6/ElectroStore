@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Registro">
+    android:orientation="vertical"
+    tools:context=".Editar">
 
     <Spinner
         android:id="@+id/spinner_categorias"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -20,10 +21,11 @@
         android:id="@+id/edtValor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:textSize="25dp"
         android:ems="10"
         android:hint="Valor o Matricula"
-
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
@@ -34,10 +36,12 @@
         android:id="@+id/edtCantidad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="Cantidad"
+        android:textSize="25dp"
+        android:layout_gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtValor" />
@@ -45,13 +49,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtCantidad"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.0"
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/btnAñadir"
@@ -59,7 +64,8 @@
             android:layout_height="wrap_content"
             android:onClick="onClick"
             android:text="Añadir"
-            android:layout_weight="1"
+            android:textSize="18dp"
+            android:layout_gravity="center"
             app:layout_constraintTop_toBottomOf="@+id/edtCantidad" />
 
         <Button
@@ -68,14 +74,29 @@
             android:layout_height="wrap_content"
             android:onClick="onClick"
             android:text="Actualizar"
-            android:layout_weight="1"/>
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"/>
 
         <Button
+            android:id="@+id/btnEliminar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClick"
+            android:textSize="18dp"
             android:text="Eliminar"
-            android:layout_weight="1"/>
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
     </LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginRight="10dp"
+        android:text="Regresar"
+        android:textSize="18dp"
+        android:onClick="onClick"/>
+</LinearLayout>

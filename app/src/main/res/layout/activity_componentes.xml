@@ -40,7 +40,8 @@
             android:id="@+id/btnEditar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Editar" />
+            android:text="Editar"
+            android:onClick="onClick"/>
     </LinearLayout>
 
     <ListView
